@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    height: 100vh;
+
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .link{
+        align-self: center;
+           .git-icn{
+               svg{
+  width: 30px;
+  height: 30px;
+               }
+              
+           }
+        }
+        .logo-title{
+            font-size: 3em;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+        .sub-heading{
+            font-size: 1.2em;
+             text-transform: capitalize;
+        }
+    }
+
+    .tools{
+        display: flex;
+        flex-direction: row;
+       gap: 20px;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       margin: 30px auto;
+
+    }
+
+    .pixelbox{
+        background-color: #F4DFBA;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        
+        flex-wrap: wrap;
+        gap: 0;
+
+        div{
+           background-color: #F4DFBA;
+            
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+input{
+    text-align: center;
+    outline: none;
+    border: none;
+  border-bottom: 3px solid #888;
+ font-size: 1.4em;
+ color: black;
+       width: 200px;
+       padding: 5px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:focus{
+
+ border-bottom: 3px solid #222;
+}
+
+
