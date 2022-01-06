@@ -49,6 +49,15 @@ body{
        align-items: center;
        margin: 30px auto;
 
+       #pixel-1 {
+background-color: #EEC373;
+
+       }
+       #pixel-2 {
+           background-color: #CA965C;
+
+       }
+
     }
 
     .pixelbox{
@@ -79,11 +88,12 @@ input{
     text-align: center;
     outline: none;
     border: none;
-  border-bottom: 3px solid #888;
  font-size: 1.4em;
  color: black;
+ border-radius: 10px;
        width: 200px;
-       padding: 5px;
+       padding: 10px 1px;
+       opacity: 0.8;
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -99,7 +109,7 @@ input[type=number] {
 
 input:focus{
 
- border-bottom: 3px solid #222;
+ opacity: 1;
 }
 
 

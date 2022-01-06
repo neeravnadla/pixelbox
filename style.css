@@ -82,6 +82,14 @@ body .tools {
   margin: 30px auto;
 }
 
+body .tools #pixel-1 {
+  background-color: #EEC373;
+}
+
+body .tools #pixel-2 {
+  background-color: #CA965C;
+}
+
 body .pixelbox {
   background-color: #F4DFBA;
   width: 250px;
@@ -102,11 +110,12 @@ input {
   text-align: center;
   outline: none;
   border: none;
-  border-bottom: 3px solid #888;
   font-size: 1.4em;
   color: black;
+  border-radius: 10px;
   width: 200px;
-  padding: 5px;
+  padding: 10px 1px;
+  opacity: 0.8;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -122,6 +131,6 @@ input[type=number] {
 }
 
 input:focus {
-  border-bottom: 3px solid #222;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
