@@ -2,19 +2,23 @@ document.querySelector("body").addEventListener("load", pageoad());
 
 function pageoad() {
   document.querySelectorAll(".in-numb").forEach((e) => {
-    e.value = getRndInteger(0, 20);
+    // intial random value
+    e.value = Math.floor(Math.random() * 21);
     e.addEventListener("input", createPixel);
   });
+
   createPixel();
 }
 
 function createPixel() {
   let pixelOne = parseInt(document.querySelector("#pixel-1").value);
   let pixelTwo = parseInt(document.querySelector("#pixel-2").value);
-  let totalPixel = perfectPixel(pixelOne + pixelTwo);
-  if (totalPixel >= 0) {
+  if (isNaN(pixelOne) === true) pixelOne = 0;
+  if (isNaN(pixelTwo) === true) pixelTwo = 0;
+  if (pixelOne >= 0 && pixelTwo >= 0) {
+    let totalPixel = perfectPixel(pixelOne + pixelTwo);
     insertBox(totalPixel);
-    createboxes(totalPixel, pixelOne, pixelTwo);
+    return createboxes(totalPixel, pixelOne, pixelTwo);
   }
 }
 
@@ -78,7 +82,7 @@ function createboxes(t, p1, p2) {
 // functions
 
 function getRndInteger(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  return;
 }
 
 function shuffleArray(array) {
