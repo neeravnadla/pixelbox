@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root{
+   --empty-box-color:#F4DFBA;
+    --p1-color:#EEC373;
+   --p2-color:#CA965C;
+}
+
 body{
     margin: auto;
     display: flex;
@@ -50,18 +56,18 @@ body{
        margin: 30px auto;
 
        #pixel-1 {
-background-color: #EEC373;
+background-color: var(--p1-color);
 
        }
        #pixel-2 {
-           background-color: #CA965C;
+           background-color: var(--p2-color);
 
        }
 
     }
 
     .pixelbox{
-        background-color: #F4DFBA;
+        background-color: var(--empty-box-color);
         width: 250px;
         height: 250px;
         display: flex;
@@ -70,7 +76,7 @@ background-color: #EEC373;
         gap: 0;
 
         div{
-           background-color: #F4DFBA;
+           background-color: var(--empty-box-color);
             
         }
         

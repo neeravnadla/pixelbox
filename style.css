@@ -5,6 +5,12 @@
           box-sizing: border-box;
 }
 
+:root {
+  --empty-box-color:#F4DFBA;
+  --p1-color:#EEC373;
+  --p2-color:#CA965C;
+}
+
 body {
   margin: auto;
   display: -webkit-box;
@@ -83,15 +89,15 @@ body .tools {
 }
 
 body .tools #pixel-1 {
-  background-color: #EEC373;
+  background-color: var(--p1-color);
 }
 
 body .tools #pixel-2 {
-  background-color: #CA965C;
+  background-color: var(--p2-color);
 }
 
 body .pixelbox {
-  background-color: #F4DFBA;
+  background-color: var(--empty-box-color);
   width: 250px;
   height: 250px;
   display: -webkit-box;
@@ -103,7 +109,7 @@ body .pixelbox {
 }
 
 body .pixelbox div {
-  background-color: #F4DFBA;
+  background-color: var(--empty-box-color);
 }
 
 input {
