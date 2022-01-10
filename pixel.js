@@ -1,3 +1,5 @@
+"use strict";
+
 document.querySelector("body").addEventListener("load", pageoad());
 
 function pageoad() {
@@ -20,14 +22,6 @@ function createPixel() {
     insertBox(totalPixel);
     return createboxes(totalPixel, pixelOne, pixelTwo);
   }
-}
-
-function perfectPixel(N) {
-  if (Math.sqrt(N) - Math.floor(Math.sqrt(N)) != 0) {
-    let nextN = Math.floor(Math.sqrt(N)) + 1;
-    return nextN * nextN;
-  }
-  return N;
 }
 
 function insertBox(bb) {
@@ -81,8 +75,12 @@ function createboxes(t, p1, p2) {
 
 // functions
 
-function getRndInteger(min, max) {
-  return;
+function perfectPixel(N) {
+  if (Math.sqrt(N) - Math.floor(Math.sqrt(N)) != 0) {
+    let nextN = Math.floor(Math.sqrt(N)) + 1;
+    return nextN * nextN;
+  }
+  return N;
 }
 
 function shuffleArray(array) {
