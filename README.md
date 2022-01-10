@@ -8,8 +8,8 @@ Live version Available here <a
         > Pixel boxed </a> .
         
         
-![image](https://user-images.githubusercontent.com/19428280/148096597-f9a70bbf-b3b5-4ab2-b841-fbb0acd87412.png)
 
+<img width="600" alt="og" src="https://user-images.githubusercontent.com/19428280/148782573-6620bfee-0847-4759-82d5-eac1a5fe596a.png">
 
 
 
