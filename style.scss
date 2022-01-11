@@ -45,7 +45,13 @@ body{
              text-transform: capitalize;
         }
     }
+section{
 
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 2vw;
     .tools{
         display: flex;
         flex-direction: row;
@@ -81,6 +87,7 @@ background-color: var(--p1-color);
         }
         
     }
+}
 }
 
 

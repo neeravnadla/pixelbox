@@ -68,7 +68,24 @@ body .top .sub-heading {
   text-transform: capitalize;
 }
 
-body .tools {
+body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2vw;
+}
+
+body section .tools {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,15 +105,15 @@ body .tools {
   margin: 30px auto;
 }
 
-body .tools #pixel-1 {
+body section .tools #pixel-1 {
   background-color: var(--p1-color);
 }
 
-body .tools #pixel-2 {
+body section .tools #pixel-2 {
   background-color: var(--p2-color);
 }
 
-body .pixelbox {
+body section .pixelbox {
   background-color: var(--empty-box-color);
   width: 250px;
   height: 250px;
@@ -108,7 +125,7 @@ body .pixelbox {
   gap: 0;
 }
 
-body .pixelbox div {
+body section .pixelbox div {
   background-color: var(--empty-box-color);
 }
 
