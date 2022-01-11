@@ -114,6 +114,7 @@ body section .tools #pixel-2 {
 }
 
 body section .pixelbox {
+  cursor: pointer;
   background-color: var(--empty-box-color);
   width: 250px;
   height: 250px;

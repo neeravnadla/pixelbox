@@ -1,6 +1,7 @@
 "use strict";
 
 document.querySelector("body").addEventListener("load", pageLoad());
+document.querySelector(".pixelbox").addEventListener("click", pageLoad);
 
 function pageLoad() {
   document.querySelectorAll(".in-numb").forEach((e) => {
@@ -9,6 +10,8 @@ function pageLoad() {
   });
   generatePixelbox();
 }
+
+
 
 function generatePixelbox() {
   let pixelOne = parseInt(document.querySelector("#pixel-1").value);

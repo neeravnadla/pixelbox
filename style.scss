@@ -73,6 +73,8 @@ background-color: var(--p1-color);
     }
 
     .pixelbox{
+
+        cursor: pointer;
         background-color: var(--empty-box-color);
         width: 250px;
         height: 250px;
