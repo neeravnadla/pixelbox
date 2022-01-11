@@ -1,7 +1,7 @@
-# pixelbox
+# PixelBoxed
 JS library for Generating Pixel Box Design.
 
-Try here >> <a
+Try now >> <a
           href="https://pixelboxed.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
