@@ -125,7 +125,7 @@ body section .pixelbox {
   gap: 0;
 }
 
-body section .pixelbox div {
+body section .pixelbox .smallbox {
   background-color: var(--empty-box-color);
 }
 

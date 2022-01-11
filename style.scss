@@ -81,7 +81,7 @@ background-color: var(--p1-color);
         flex-wrap: wrap;
         gap: 0;
 
-        div{
+        .smallbox {
            background-color: var(--empty-box-color);
             
         }
