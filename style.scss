@@ -6,7 +6,7 @@
 
 :root{
    --empty-box-color:#F4DFBA;
-    --p1-color:#EEC373;
+   --p1-color:#EEC373;
    --p2-color:#CA965C;
 }
 
@@ -27,13 +27,12 @@ body{
         
         .link{
         align-self: center;
-           .git-icn{
-               svg{
-  width: 30px;
-  height: 30px;
-               }
-              
-           }
+            .git-icn{
+                svg{
+                    width: 30px;
+                    height: 30px;
+                    }          
+                }
         }
         .logo-title{
             font-size: 3em;
@@ -45,6 +44,8 @@ body{
              text-transform: capitalize;
         }
     }
+
+
 section{
 
      display: flex;
@@ -62,40 +63,34 @@ section{
        margin: 30px auto;
 
        #pixel-1 {
-background-color: var(--p1-color);
-
-       }
-       #pixel-2 {
-           background-color: var(--p2-color);
-
-       }
+        background-color: var(--p1-color);
+        }
+        #pixel-2 {
+        background-color: var(--p2-color);
+        }
 
     }
 
     .pixelbox{
 
+        border-radius: 20px;
+        box-shadow: 19px 19px 38px #848484,
+        -19px -19px 38px #ffffff;
+       // padding: 1px;
+        overflow: hidden;
         cursor: pointer;
         background-color: var(--empty-box-color);
+        display: grid;
+        grid-template-columns: repeat(var(--grid), 1fr);
+        grid-template-rows: repeat(var(--grid), 1fr);
         width: 250px;
         height: 250px;
-        display: flex;
-        
-        flex-wrap: wrap;
-        gap: 0;
 
-        .smallbox {
-           background-color: var(--empty-box-color);
-            
-        }
+    
         
     }
 }
 }
-
-
-
-
-
 
 
 
